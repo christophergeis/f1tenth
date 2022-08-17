@@ -43,8 +43,6 @@ RUN cd f1tenth_gym && \
 # ros2 gym bridge
 RUN mkdir -p sim_ws/src/f1tenth_gym_ros
 COPY /f1tenth_gym_ros /sim_ws/src/f1tenth_gym_ros
-RUN mkdir -p sim_ws/src/f1tenth_sim_agent
-COPY /f1tenth_sim_agent /sim_ws/src/f1tenth_sim_agent
 RUN source /opt/ros/foxy/setup.bash && \
     cd sim_ws/ && \
     apt-get update --fix-missing && \
